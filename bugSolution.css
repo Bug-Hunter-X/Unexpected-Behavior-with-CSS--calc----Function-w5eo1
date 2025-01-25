@@ -1,0 +1,29 @@
+/* bugSolution.css */
+/* Correct use of calc(): No extra spaces around operators */
+.correct-spacing {
+  width: calc(100% - 20px);
+}
+
+/* Proper unit handling in calc(): consistent units within a single calc expression  */
+.consistent-units {
+  height: calc(100px + 20px);
+}
+
+/* Handle unit mixing in calc() by separating calculations or converting units */
+.mixed-units {
+  /* Option 1: separate calculations */
+  width: 100%;
+  margin-right: calc(100% * 0.2); /* 20% of 100% */
+
+  /* Option 2: convert units (adjust as needed) */
+  /* Requires knowing the context's size (e.g., parent element) */
+}
+
+/* Improved nested calc() functions for better readability and maintainability */
+.nested-calc {
+  width: calc(100% - calc(20px + 10px)); /* Keep it simple*/
+}
+/* Or, decompose nested calc() expressions for better clarity */
+.decomposed-calc {
+  width: calc(100% - 30px);
+}
